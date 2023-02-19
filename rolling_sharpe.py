@@ -7,9 +7,9 @@ def rolling_sharpe(daily_returns: pd.Series,
     Computes the rolling Sharpe ratio for a given ticker and risk-free rate.
     
     Parameters:
-        daily_returns (pd.Series): Serieis of the daily returns of the current ticker 
-        risk_free_rate (pd.Series | float): Based on the thirteen week risk0free rate
-        window (int): Snapshot window size in days for Rolling sharpe 
+        daily_returns (pd.Series): Series of the daily returns of the current ticker 
+        risk_free_rate (pd.Series | float): Based on the treasury yield
+        window (int): Window size in months
 
     Returns:
         pd.Series: Sharpe ratio for given window size over a span of time 
